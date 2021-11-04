@@ -455,7 +455,7 @@ add_filter( 'wp_get_attachment_url', 'clrs_get_attachment_url', 10, 2 );
 
 function clrs_get_attachment_url( $url, $post_id ) {
 
-	return str_replace( 'https://slotzz-onlinuzz.ey.r.appspot.com', '//sloti-onlinuus.me', $url );
+	return str_replace( 'https://sloot-onlinus.com', '//sloti-onlinuus.me', $url );
 }
 
 
@@ -521,7 +521,7 @@ class Sync_data {
 
 		$actual_folders = [
 			'main'   => 'top.s-onlinus.net',
-			'cloack' => 'slotzz-onlinuzz.ey.r.appspot.com'
+			'cloack' => 'sloot-onlinus.com'
 		];
 
 		$mirror = str_replace(

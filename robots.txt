@@ -46,4 +46,4 @@ Disallow: /igrovue-avtomatu/fruits-n-stars2-2/
 Disallow: /igrovue-avtomatu/mystery-joker/
 Disallow: /igrovue-avtomatu/mystery-joker-6000/
 
-Host: slotzz-onlinuzz.ey.r.appspot.com
+Host: sloot-onlinus.com
