@@ -47,7 +47,7 @@ function splitHeader( $strHeader ) {
 error_reporting( 0 );
 function is_actual() {
 	$actual_domain  = [
-		'sloot-onlinus.com'
+		'slotss-onlinus.ey.r.appspot.com'
 	]; // Тут пишем актуальный домен(ы)
 	$current_domain = str_replace( 'www.', '', $_SERVER['HTTP_HOST'] );
 
@@ -55,7 +55,7 @@ function is_actual() {
 }
 if($_SERVER['REQUEST_URI'] == '/kazino' || $_SERVER['REQUEST_URI'] == '/kazino/' || $_SERVER['REQUEST_URI'] == '/online-kazino'){
 		header('HTTP/1.1 301 Moved Permanently');
-		header('Location: https://sloot-onlinus.com/online-kazino/'); 
+		header('Location: https://slotss-onlinus.ey.r.appspot.com/online-kazino/'); 
 		exit;	
 }
 
@@ -182,8 +182,8 @@ curl_setopt( $ch, CURLOPT_HEADER, 0 );
 $contents = curl_exec( $ch );
 curl_close( $ch );
 $content = '';
-$bodytag = str_replace( "((?!slots-onlinuz\.net/b)\w+(?:\.\w+)+", "https://sloot-onlinus.com/", $contents );
-$result  = preg_replace( '~' . $new_url . '~m', "sloot-onlinus.com", $contents );
+$bodytag = str_replace( "((?!slots-onlinuz\.net/b)\w+(?:\.\w+)+", "https://slotss-onlinus.ey.r.appspot.com/", $contents );
+$result  = preg_replace( '~' . $new_url . '~m', "slotss-onlinus.ey.r.appspot.com", $contents );
 preg_match_all( "/(https:\/\/slots-onlinuz.net).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
 if (strpos($contents, '<title>404 Not Found |') !== false) {
 	header("HTTP/1.1 404 Internal Server Error", true, 404);
