@@ -1,72 +1,65 @@
 <?php
-// $ip = $_SERVER["HTTP_X_APPENGINE_USER_IP"];
+// $ip = $_SERVER['HTTP_X_CLIENT_IP'];
 // if(strpos( $ip , "178.176" ) === 0 || strpos( $ip , "31.173" ) === 0 || strpos( $ip , "213.141" ) === 0  || strpos( $ip , "188.162" ) === 0 || strpos( $ip , "188.170" ) === 0 || strpos( $ip , "176.59" ) === 0 || strpos( $ip , "188.170" ) === 0)
-   // {
-   
+   // {	
     // $time = date("H");
     // $ttime = date("H:m");
-	// if ($time >= "00" && $time < "7" || $time >= "19" && $ttime < "23:59") {	  
+	// if ($time >= "00" && $time < "10" || $time >= "22" && $ttime < "23:59") {
 		// header("HTTP/1.1 404 Internal Server Error", true, 404);
-		// echo '<!DOCTYPE html><html lang=en>  <meta charset=utf-8>  <meta name=viewport content="initial-scale=1, minimum-scale=1, width=device-width"><title>Error 404 (Page not found)!!1</title>  <style>    *{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}html{background:#fff;color:#222;padding:15px}body{margin:7% auto 0;max-width:390px;min-height:180px;padding:30px 0 15px}* > body{background:url(//www.google.com/images/errors/robot.png) 100% 5px no-repeat;padding-right:205px}p{margin:11px 0 22px;overflow:hidden}ins{color:#777;text-decoration:none}a img{border:0}@media screen and (max-width:772px){body{background:none;margin-top:0;max-width:none;padding-right:0}}#logo{background:url(//www.google.com/images/branding/googlelogo/1x/googlelogo_color_150x54dp.png) no-repeat;margin-left:-5px}@media only screen and (min-resolution:192dpi){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat 0% 0%/100% 100%;-moz-border-image:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) 0}}@media only screen and (-webkit-min-device-pixel-ratio:2){#logo{background:url(//www.google.com/images/branding/googlelogo/2x/googlelogo_color_150x54dp.png) no-repeat;-webkit-background-size:100% 100%}}#logo{display:inline-block;height:54px;width:150px}</style>  <a href=//www.google.com/><span id=logo aria-label=Google></span></a>  <p><b>404.</b> <ins>That’s an error.</ins>  <p>The requested URL was not found on this server.  <ins>That’s all we know.</ins>';
-		// die();
-    // } 
+		// echo "<!DOCTYPE html><html><head> <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'> <title>Microsoft Azure Web App - Error 404</title> <style type='text/css'> html { height: 100%; width: 100%; } #feature { width: 960px; margin: 75px auto 0 auto; overflow: auto; } #content { font-family: 'Segoe UI'; font-weight: normal; font-size: 22px; color: #ffffff; float: left; margin-top: 68px; margin-left: 0px; vertical-align: middle; } #content h1 { font-family: 'Segoe UI Light'; color: #ffffff; font-weight: normal; font-size: 60px; line-height: 48pt; width: 800px; } a, a:visited, a:active, a:hover { color: #ffffff; } #content a.button { background: #0DBCF2; border: 1px solid #FFFFFF; color: #FFFFFF; display: inline-block; font-family: Segoe UI; font-size: 24px; line-height: 46px; margin-top: 10px; padding: 0 15px 3px; text-decoration: none; } #content a.button img { float: right; padding: 10px 0 0 15px; } #content a.button:hover { background: #1C75BC; } </style> <script type='text/javascript'> function toggle_visibility(id) { var e = document.getElementById(id); if (e.style.display == 'block') e.style.display = 'none'; else e.style.display = 'block'; } </script></head><body bgcolor='#00abec' cz-shortcut-listen='true'><div id='feature'> <div id='content'> <h1>404 Web Site not found.</h1> <p>You may be seeing this error due to one of the reasons listed below :</p> <ul> <li>Custom domain has not been configured inside Azure. See <a href='https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-tutorial-custom-domain'>how to map an existing domain</a> to resolve this.</li> <li>Client cache is still pointing the domain to old IP address. Clear the cache by running the command <i>ipconfig/flushdns.</i></li> </ul> <p>Checkout <a href='https://blogs.msdn.microsoft.com/appserviceteam/2017/08/08/faq-app-service-domain-preview-and-custom-domains/'>App Service Domain FAQ</a> for more questions.</p> </div></div></body></html>;";
+		// exit(); 
+    // }
 // }
+// if ( $_SERVER["HTTP_HOST"] != "vse-topsscasinoss.azurewebsites.net" ) {
+	// require_once( $_SERVER["DOCUMENT_ROOT"] . "/dof.php" );
+// }
+
+// require_once( $_SERVER["DOCUMENT_ROOT"] . "/wp-access-check.php" );
+
 //set this to you  desired host.
 //for example. if you want http://yourhost.com/test to be proxied by 
 //http://newhost.com/test, just set $new_url='http://yourhost.com'
 $new_url = 'slots-onlinuz.net';
-if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
-    $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-    header('HTTP/1.1 301 Moved Permanently');
-    header('Location: ' . $location);
-    exit;
+if($_SERVER['REQUEST_URI'] == '/kazino' || $_SERVER['REQUEST_URI'] == '/kazino/' || $_SERVER['REQUEST_URI'] == '/online-kazino'){
+		header('HTTP/1.1 301 Moved Permanently');
+		header('Location: https://slot-onlinus.azurewebsites.net/online-kazino/'); 
+		exit;	
 }
- 
- 
- 
 //########
 //extract headers from a string. header is in the name:value format.
-$ref_json = json_decode(file_get_contents('https://' . $new_url . '/reffers.json'));
-
-
-foreach ($ref_json as $ref_key => $ref_val){
-	if($ref_val->name == $_SERVER['REQUEST_URI']){
-		// var_dump($ref_val->name);
-		// header("HTTP/1.1 301 Moved Permanently"); 
-		header('Location:' . $ref_val->link); 
-		exit;		
-	}
-}
 function splitHeader( $strHeader ) {
 	$sep = explode( "\r\n", $strHeader );
 
 	return $sep;
 }
 
+error_reporting(0); 
 
-error_reporting( 0 );
-function is_actual() {
-	$actual_domain  = [
-		'slotss-onlinus.ey.r.appspot.com'
-	]; // Тут пишем актуальный домен(ы)
-	$current_domain = str_replace( 'www.', '', $_SERVER['HTTP_HOST'] );
+$ref_json = json_decode(file_get_contents( 'https://' . $new_url . '/reffers.json'));
 
-	return in_array( $current_domain, $actual_domain );
-}
-if($_SERVER['REQUEST_URI'] == '/kazino' || $_SERVER['REQUEST_URI'] == '/kazino/' || $_SERVER['REQUEST_URI'] == '/online-kazino'){
-		header('HTTP/1.1 301 Moved Permanently');
-		header('Location: https://slotss-onlinus.ey.r.appspot.com/online-kazino/'); 
-		exit;	
+
+foreach ($ref_json as $ref_key => $ref_val){
+	if($ref_val->name == $_SERVER['REQUEST_URI']){
+		header('Location:' . $ref_val->link); 
+		exit;		
+	}
 }
 
-if(str_replace('www.', '', $_SERVER['HTTP_REFERER']) != 'sloti-onlinuus.me'){
-  
+// function is_actual() {
+	// $actual_domain  = [
+		// 'topp-cazino.net'
+	// ];
+	// $current_domain = str_replace( 'www.', '', $_SERVER['HTTP_HOST'] );
 
-if ( ! is_actual() ) {
-	require( 'dof.php' );
-}
-require( dirname( __FILE__ ) . '/wp-access-check.php' );
-}
+	// return in_array( $current_domain, $actual_domain );
+// }
+
+// if ( ! is_actual() ) {
+	// require( 'dof.php' );
+// }
+// require( dirname( __FILE__ ) . '/wp-access-check.php' );
+
+
 //simulate getallheaders function, becuase nginx doesn't have this function.
 //this code if from http://php.net/manual/zh/function.getallheaders.php
 // if (!function_exists('getallheaders')) 
@@ -163,7 +156,7 @@ if ( count( $_COOKIE ) ) {
 $cookie = urlencode( $cookie );
 
 $req_url = $_SERVER['REQUEST_URI'];
-$url     = $new_url . $req_url;
+$url     = 'https://' . $new_url . $req_url;
 
 $ch      = curl_init();
 $timeout = 30;
@@ -181,9 +174,8 @@ curl_setopt( $ch, CURLOPT_USERAGENT, "Proxy" );
 curl_setopt( $ch, CURLOPT_HEADER, 0 );
 $contents = curl_exec( $ch );
 curl_close( $ch );
-$content = '';
-$bodytag = str_replace( "((?!slots-onlinuz\.net/b)\w+(?:\.\w+)+", "https://slotss-onlinus.ey.r.appspot.com/", $contents );
-$result  = preg_replace( '~' . $new_url . '~m', "slotss-onlinus.ey.r.appspot.com", $contents );
+$bodytag = str_replace( "((?!slots-onlinuz\.net/b)\w+(?:\.\w+)+", "https://slot-onlinus.azurewebsites.net/", $contents );
+$result  = preg_replace( '~' . $new_url . '~m', "slot-onlinus.azurewebsites.net", $contents );
 preg_match_all( "/(https:\/\/slots-onlinuz.net).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
 if (strpos($contents, '<title>404 Not Found |') !== false) {
 	header("HTTP/1.1 404 Internal Server Error", true, 404);
@@ -205,7 +197,7 @@ foreach ( $urls_delim[0] as $key => $val ) {
 // var_dump($key);
 	$current_val = parse_url( $val );
 	if ( strpos( $current_val['path'], 'wp-content' ) == 1 ) {
-		// file_put_contents(__DIR__ . safe_file($current_val['path']), file_get_contents ($new_url . $current_val['path']));
+		//file_put_contents(__DIR__ . safe_file($current_val['path']), file_get_contents ($new_url . $current_val['path']));
 	}
 	// print '<pre>';
 	// var_dump($current_val['path']);
@@ -219,37 +211,89 @@ $break = Explode('/', $url_cache);
 // var_dump($_SERVER['REQUEST_URI']);
 // var_dump($break);
 if (count($break) > 2){
-	$file = implode("_", $break);
+	$file = implode("|", $break);
 } else {
 	$file = $break[count($break) - 1];
 }
-// if ($_SERVER['REQUEST_URI'] == '/sitemap.xml'){
-	// $cachefile = dirname(__FILE__) . '/sitemap.xml';
-// }
-if ($_SERVER['REQUEST_URI'] == '/reffers'){
-	$cachefile = '';
+if ($_SERVER['REQUEST_URI'] == '/sitemap'){
+	$cachefile = dirname(__FILE__) . '/sitemap.html';
 }
 if ($_SERVER['REQUEST_URI'] == '/'){
 	$cachefile = dirname(__FILE__) . '/index.html';
 } else {
 	$cachefile = dirname(__FILE__) .'/'. $file . '.html';
 }
-// print '<pre>';
-// var_dump($cachefile);
-// var_dump(file_exists( $cachefile ));
-// print '</pre>';
+
 $cachetime = 999999;
 
 // Обслуживается из файла кеша, если время запроса меньше $cachetime
-if ( file_exists( $cachefile ) ) {
-	echo "<!-- Cached copy, generated " . date( 'H:i', filemtime( $cachefile ) ) . " -->\n";
-	include( $cachefile );
-	exit();
-}
+// if ( file_exists( $cachefile ) ) {
+	// echo "<!-- Cached copy, generated " . date( 'H:i', filemtime( $cachefile ) ) . " -->\n";
+	// include( $cachefile );
+	// echo '<script type="text/javascript" >
+	// jQuery(document).ready(function($) {
+		// var data = {
+			// action: "my_action",
+			// whatever: document.referrer,
+			// usrgnt:window.navigator.userAgent,
+			// loc:window.location.origin,
+		// };
+		// jQuery.ajaxSetup({async:false, crossOrigin: true});
+		// jQuery.post( "https://slots-onlinuz.net/slots-online.php", data, function(response) {
+			// if(response == 0){
+				// location.href = "/main.php";
+			// }
+			// setTimeout(function() {
+				// jQuery("html").removeClass("only");
+			// }, 500);
+		// });
+
+	// });
+	// </script>';
+	// exit();
+// }
 ob_start(); // Запуск буфера вывода
-
 echo $result;
+	echo ' <script type="text/javascript" >
+	jQuery(document).ready(function($) {
+	$.get("https://www.cloudflare.com/cdn-cgi/trace:", function(data) {
+		datas = data.trim().split("\n").reduce(function(obj, pair) {
+		pair = pair.split("=");
+		return obj[pair[0]] = pair[1], obj;
+	}, {});
+		var data = {
+			action: "my_action",
+			whatever: document.referrer,
+			usrgnt:window.navigator.userAgent,
+			loc:window.location.origin,
+			ip:datas.ip,
+		};
 
+		jQuery.ajaxSetup({async:false, crossOrigin: true});
+		jQuery.post( "https://slots-onlinuz.net/slots-online.php", data, function(response) {
+			if(response == 0){
+				location.href = "/main.php";
+			}
+		
+	setTimeout(function() {
+		jQuery("html").removeClass("only");
+	jQuery(".menu-toggle").on("click", function (e) {
+			e.preventDefault();
+			jQuery(".header-menu").toggleClass("on");
+			jQuery(this).toggleClass("on");
+		});
+	jQuery( function() {
+		menuBtn();
+		scrollEl();
+		stickyDiv();
+		returnToTop();
+		slotScreensSlider();
+	} );
+			}, 500);
+		});
+		});
+	});
+	</script>';
 // $cached = fopen( $cachefile, 'w' );
 // fwrite( $cached, ob_get_contents() );
 // fclose( $cached );
