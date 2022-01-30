@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://slots-onlinus.azurewebsites.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="12.05.2021 07:44" -->
+<!-- generated-on="30.01.2022 05:31" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://slots-onlinus.azurewebsites.net/igrovue-avtomatu/house-of-dragons/</loc>
 		<changefreq>monthly</changefreq>
@@ -45,4 +45,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: 0b176386256b24238da6d65acefc2bae; Queries for sitemap: 4; Total queries: 22; Seconds: 0.02; Memory for sitemap: 0MB; Total memory: 2MB -->
+</urlset><!-- Request ID: a17fd533222417b0f6b623d4fca3e7e5; Queries for sitemap: 4; Total queries: 22; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->

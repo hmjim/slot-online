@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://slots-onlinus.azurewebsites.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="12.05.2021 07:49" -->
+<!-- generated-on="30.01.2022 05:34" -->
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<url>
 		<loc>https://slots-onlinus.azurewebsites.net/igrovue-avtomatu/boomanji/</loc>
 		<changefreq>monthly</changefreq>
@@ -65,4 +65,4 @@
 		<changefreq>monthly</changefreq>
 		<priority>0.6</priority>
 	</url>
-</urlset><!-- Request ID: adac750313800e6ef39c09c6446d7184; Queries for sitemap: 4; Total queries: 22; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 16MB -->
+</urlset><!-- Request ID: 6ea66d017234a60295cc1139b9a38e0b; Queries for sitemap: 4; Total queries: 22; Seconds: 0.01; Memory for sitemap: 0MB; Total memory: 2MB -->

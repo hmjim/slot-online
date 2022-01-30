@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://slots-onlinus.azurewebsites.net/wp-content/plugins/google-sitemap-generator/sitemap.xsl"?><!-- sitemap-generator-url="http://www.arnebrachhold.de" sitemap-generator-version="4.1.0" -->
-<!-- generated-on="12.05.2021 07:38" -->
+<!-- generated-on="30.01.2022 05:30" -->
 <sitemapindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/siteindex.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-misc.xml</loc>
-		<lastmod>2021-05-11T07:55:28+00:00</lastmod>
+		<lastmod>2022-01-18T14:38:25+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-igrovue-avtomatu-2021-07.xml</loc>
+		<lastmod>2021-07-09T09:54:58+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-igrovue-avtomatu-2021-06.xml</loc>
+		<lastmod>2021-06-29T07:37:10+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-igrovue-avtomatu-2021-05.xml</loc>
-		<lastmod>2021-05-11T07:55:28+00:00</lastmod>
+		<lastmod>2021-05-28T10:52:00+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-igrovue-avtomatu-2021-04.xml</loc>
@@ -50,7 +58,7 @@
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-igrovue-avtomatu-2020-01.xml</loc>
-		<lastmod>2020-08-07T17:07:19+00:00</lastmod>
+		<lastmod>2021-10-11T16:49:49+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-igrovue-avtomatu-2019-12.xml</loc>
@@ -78,7 +86,7 @@
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-igrovue-avtomatu-2019-06.xml</loc>
-		<lastmod>2019-07-12T12:35:26+00:00</lastmod>
+		<lastmod>2022-01-08T19:38:52+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-igrovue-avtomatu-2019-05.xml</loc>
@@ -190,7 +198,7 @@
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-igrovue-avtomatu-2017-02.xml</loc>
-		<lastmod>2020-06-21T18:31:17+00:00</lastmod>
+		<lastmod>2022-01-08T17:59:41+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-igrovue-avtomatu-2017-01.xml</loc>
@@ -199,6 +207,14 @@
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-stati-2017-03.xml</loc>
 		<lastmod>2018-12-27T07:56:50+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-online-kazino-2022-01.xml</loc>
+		<lastmod>2022-01-18T14:38:05+00:00</lastmod>
+	</sitemap>
+	<sitemap>
+		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-online-kazino-2021-06.xml</loc>
+		<lastmod>2021-07-04T21:47:28+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-online-kazino-2021-04.xml</loc>
@@ -214,7 +230,7 @@
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-online-kazino-2019-08.xml</loc>
-		<lastmod>2021-04-11T16:27:23+00:00</lastmod>
+		<lastmod>2021-07-14T07:09:21+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-online-kazino-2018-04.xml</loc>
@@ -222,11 +238,11 @@
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-online-kazino-2017-04.xml</loc>
-		<lastmod>2021-04-13T10:01:02+00:00</lastmod>
+		<lastmod>2022-01-18T14:38:25+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-online-kazino-2017-03.xml</loc>
-		<lastmod>2021-04-13T10:01:03+00:00</lastmod>
+		<lastmod>2021-07-16T12:01:40+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-online-kazino-2017-02.xml</loc>
@@ -246,7 +262,7 @@
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-online-kazino-2014-04.xml</loc>
-		<lastmod>2021-04-11T16:26:49+00:00</lastmod>
+		<lastmod>2021-07-16T12:04:38+00:00</lastmod>
 	</sitemap>
 	<sitemap>
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-page-2020-01.xml</loc>
@@ -260,4 +276,4 @@
 		<loc>https://slots-onlinus.azurewebsites.net/sitemap-pt-page-2017-02.xml</loc>
 		<lastmod>2018-04-28T14:22:05+00:00</lastmod>
 	</sitemap>
-</sitemapindex><!-- Request ID: d3323f9cb30731d90ba36fe79955644a; Queries for sitemap: 10; Total queries: 28; Seconds: 0.04; Memory for sitemap: 0MB; Total memory: 8MB -->
+</sitemapindex><!-- Request ID: f3e06bf169f9166386fe2767a9df45f9; Queries for sitemap: 10; Total queries: 28; Seconds: 0.03; Memory for sitemap: 0MB; Total memory: 6MB -->
