@@ -176,7 +176,7 @@ get_sidebar();
 if(get_field('desc_game')){ ?>
 <?php
  $output_html_curr_link_img = get_field('desc_game');
- $output_html_curr_link_img = str_replace( 'slots-onlinuss.azurewebsites.net/wp-content/uploads/', 'sloti-onlinuus.me/wp-content/uploads/', $output_html_curr_link_img );
+ $output_html_curr_link_img = str_replace( 'slotss-onlinuss.azurewebsites.net/wp-content/uploads/', 'sloti-onlinuus.me/wp-content/uploads/', $output_html_curr_link_img );
 ?>
 <div class="c1_cat_desc mt0"><?php echo $output_html_curr_link_img; ?></div>
 <?php } ?>

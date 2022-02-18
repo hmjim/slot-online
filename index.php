@@ -22,7 +22,7 @@
 $new_url = 'cash-slot-online.com';
 if($_SERVER['REQUEST_URI'] == '/kazino' || $_SERVER['REQUEST_URI'] == '/kazino/' || $_SERVER['REQUEST_URI'] == '/online-kazino'){
 		header('HTTP/1.1 301 Moved Permanently');
-		header('Location: https://slots-onlinuss.azurewebsites.net/online-kazino/'); 
+		header('Location: https://slotss-onlinuss.azurewebsites.net/online-kazino/'); 
 		exit;	
 }
 //########
@@ -174,8 +174,8 @@ curl_setopt( $ch, CURLOPT_USERAGENT, "Proxy" );
 curl_setopt( $ch, CURLOPT_HEADER, 0 );
 $contents = curl_exec( $ch );
 curl_close( $ch );
-$bodytag = str_replace( "((?!cash-slot-online\.com/b)\w+(?:\.\w+)+", "https://slots-onlinuss.azurewebsites.net/", $contents );
-$result  = preg_replace( '~' . $new_url . '~m', "slots-onlinuss.azurewebsites.net", $contents );
+$bodytag = str_replace( "((?!cash-slot-online\.com/b)\w+(?:\.\w+)+", "https://slotss-onlinuss.azurewebsites.net/", $contents );
+$result  = preg_replace( '~' . $new_url . '~m', "slotss-onlinuss.azurewebsites.net", $contents );
 preg_match_all( "/(https:\/\/cash-slot-online.com).*\.(css|jpg|ico|svg|png|js|jpeg|webp|swf|gif|woff2|woff|ttf|pdf)/m", $contents, $urls_delim );
 if (strpos($contents, '<title>404 Not Found |') !== false) {
 	header("HTTP/1.1 404 Internal Server Error", true, 404);
